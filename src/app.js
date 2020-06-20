@@ -15,5 +15,9 @@ const getName = async (userId) => {
 getName("1").then((res) =>
   res.json().then((data) => {
     document.getElementById("name").innerHTML = data.name;
+    document.getElementById(
+      "bio"
+    ).innerHTML = `MY NAME IS ${data.name} ${data.age}YO AND THIS IS MY RESUME`;
+    document.getElementById("description").innerHTML = data.description;
   })
 );
