@@ -12,6 +12,8 @@ const getName = async (userId) => {
   });
 };
 
-document.getElementById("name").innerHTML = getName("1").then((res) =>
-  res.json()
+getName("1").then((res) =>
+  res.json().then((data) => {
+    document.getElementById("name").innerHTML = data.name;
+  })
 );

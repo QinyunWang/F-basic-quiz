@@ -1,3 +1,12 @@
 @import "variables";
 @import "mixins";
 @import "reboot";
+
+.sections {
+  width: 90%;
+  margin: 0 auto;
+  > h3 {
+    color: $primary-color;
+    font-weight: bold;
+  }
+}
