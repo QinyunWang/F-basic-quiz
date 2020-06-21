@@ -1,4 +1,4 @@
-const setEducation = (education) => {
+const setEducation = async (education) => {
   const item = (year, title, description) =>
     `
       <li class="education">
@@ -20,7 +20,7 @@ const setEducation = (education) => {
     data.sort((a, b) => a.year - b.year);
   };
 
-  education
+  await education
     .then((res) => res.json())
     .then((data) => {
       sortEducation(data);

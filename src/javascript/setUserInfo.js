@@ -1,8 +1,8 @@
-const setUserInfo = (user) => {
+const setUserInfo = async (user) => {
   const bio = (name, age) =>
     `MY NAME IS ${name} ${age}YO AND THIS IS MY RESUME`;
 
-  user
+  await user
     .then((res) => res.json())
     .then((data) => {
       document.getElementById("name").innerHTML = data.name;
