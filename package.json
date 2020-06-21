@@ -45,7 +45,6 @@
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.1.1",
-    "@testing-library/dom": "^7.16.2",
-    "jquery": "^3.5.1"
+    "@testing-library/dom": "^7.16.2"
   }
 }
