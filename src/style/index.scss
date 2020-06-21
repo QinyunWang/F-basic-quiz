@@ -10,3 +10,26 @@
     font-weight: bold;
   }
 }
+
+ul {
+  padding-bottom: 15px;
+}
+
+.education {
+  display: flex;
+  margin-bottom: 15px;
+  > p {
+    width: 15%;
+  }
+  > div {
+    width: 85%;
+  }
+}
+
+.item {
+  padding: 0 10px;
+  background-color: $gray-light;
+  > p:first-child {
+    font-weight: bold;
+  }
+}

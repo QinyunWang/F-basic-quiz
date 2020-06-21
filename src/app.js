@@ -18,6 +18,7 @@ getName("1").then((res) =>
     document.getElementById(
       "bio"
     ).innerHTML = `MY NAME IS ${data.name} ${data.age}YO AND THIS IS MY RESUME`;
+    document.querySelector("img").setAttribute("src", data.avatar);
     document.getElementById("description").innerHTML = data.description;
   })
 );
